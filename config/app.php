@@ -1,5 +1,5 @@
 <?php
-echo "aa";
+echo "normal app";
 return [
 
     /*

@@ -4,4 +4,4 @@ return [
     'debug' => true,
     'url' => 'https://octobercms-test.herokuapp.com/'
 ];
-echo "aa";
+echo "testing app";
