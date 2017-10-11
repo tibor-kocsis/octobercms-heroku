@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'debug' => true,
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'https://octobercms-test.herokuapp.com/',
+    'url' => env('APP_URL', 'https://octobercms-test.herokuapp.com/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'key' => 'CHANGE_ME!!!!!!!!!!!!!!!!!!!!!!!',
+    'key' => env('APP_KEY', 'CHANGE_ME!!!!!!!!!!!!!!!!!!!!!!!'),
 
     'cipher' => 'AES-256-CBC',
 
