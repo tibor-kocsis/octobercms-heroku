@@ -1,8 +1,14 @@
-# octobercms-heroku
+# Running OctoberCMS on Heroku with Heroku PostgreSQL
+
+Start from stratch, create a brand new OctoberCMS:
 
 ```
 composer create-project october/october myoctober
-cd myoctober
+```
+
+Change the config the external environment:
+
+```
 php artisan october:env
 ```
 
@@ -16,24 +22,27 @@ git init
 Important: remove composer.lock from .gitignore!
 
 
-Log into heroku and set up the cloud database:
+Log in to heroku and set up the cloud database:
 
 ```
-heroku login
 heroku create
 heroku addons:create heroku-postgresql:hobby-dev
 ```
 
-Push the codebase and create the db on remote side.
+Push the codebase:
 
 ```
 git add . --all
 git commit -m "Heroku setup"
 git push heroku master
+```
+
+Log in to the app with an on-off dyno, and run the db migrations
+
+```
 heroku run bash
 
 > php artisan october:up
-
 ```
 
-Open heroku app, and move under /backend, login with admin/admin. It should work :)
+Open heroku app and login with admin/admin under /backend url. It should work :)
