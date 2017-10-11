@@ -141,7 +141,7 @@ return [
     |
     */
 
-    'enableRoutesCache' => false,
+    'enableRoutesCache' => env('ROUTES_CACHE', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -181,7 +181,7 @@ return [
     |
     */
 
-    'enableAssetCache' => false,
+    'enableAssetCache' => env('ASSET_CACHE', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -296,7 +296,7 @@ return [
     |
     */
 
-    'linkPolicy' => 'detect',
+    'linkPolicy' => env('LINK_POLICY', 'detect'),
 
     /*
     |--------------------------------------------------------------------------
@@ -332,7 +332,7 @@ return [
     |
     */
 
-    'enableCsrfProtection' => false,
+    'enableCsrfProtection' => env('ENABLE_CSRF', false),
 
     /*
     |--------------------------------------------------------------------------
