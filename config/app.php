@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://octobercms-test.herokuapp.com/'),
+    'url' => env('APP_URL', 'http://localhost'),
 
     /*
     |--------------------------------------------------------------------------
