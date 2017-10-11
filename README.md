@@ -1,6 +1,6 @@
 # Running OctoberCMS on Heroku with Heroku PostgreSQL
 
-Start from stratch, create a brand new OctoberCMS:
+Start from scratch, create a brand new OctoberCMS:
 
 ```
 composer create-project october/october myoctober
