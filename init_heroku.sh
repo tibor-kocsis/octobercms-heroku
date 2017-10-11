@@ -1,3 +1,3 @@
 #!/bin/bash
 
-heroku config:set APP_ENV=testing
+heroku addons:create heroku-postgresql:hobby-dev
