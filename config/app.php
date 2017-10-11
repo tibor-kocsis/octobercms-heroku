@@ -1,5 +1,5 @@
 <?php
-
+echo "aa";
 return [
 
     /*
@@ -28,7 +28,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'October CMS',
+    'name' => 'October CMS2',
 
     /*
     |--------------------------------------------------------------------------
